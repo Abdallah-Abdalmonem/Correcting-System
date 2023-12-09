@@ -1,4 +1,8 @@
 import 'package:correcting_system/features/bottomNavigationBar/bottomNavigationBar_cubit/bottom_navigation_bar_cubit.dart';
+import 'package:correcting_system/features/home/views/home_screen.dart';
+import 'package:correcting_system/features/profile/views/profile_screen.dart';
+import 'package:correcting_system/features/rating/views/rating_screen.dart';
+import 'package:correcting_system/features/settings/views/seetings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -54,9 +58,9 @@ List<BottomNavigationBarItem> bottomNavItems = const <BottomNavigationBarItem>[
 ];
 
 List<Widget> bottomNavScreen = <Widget>[
-  Text('Index 0: Home'),
+  HomeScreen(),
   AddExamScreen(),
-  Text('Index 2: Search'),
-  Text('Index 3: Favourite'),
-  Text('Index 4: Cart'),
+  ProfileScreen(),
+  RatingScreen(),
+  SettingsScreen(),
 ];
