@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../widgets/custom_drawer.dart';
 
-class InstructorScreen extends StatelessWidget {
-  InstructorScreen({super.key});
+class AddExamScreen extends StatelessWidget {
+  AddExamScreen({super.key});
 
   List<String> questionList = [
     '1.Which of the following is the best ddddd ddd ?',
@@ -137,30 +137,3 @@ class InstructorScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-/*
-
-ListView.builder(
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) => Container(
-                    margin: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
-                    padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius: 5,
-                          offset: Offset(0, 3),
-                        ),
-                      ],
-                      borderRadius: BorderRadius.circular(16),
-                      color: Colors.white,
-                    ),
-                    child: Text('${QuestionList[index]}'),
-                  ),
-                  itemCount: QuestionList.length,
-                ),
-
-                */

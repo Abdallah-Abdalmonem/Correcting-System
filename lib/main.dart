@@ -1,8 +1,8 @@
+import 'package:correcting_system/features/bottomNavigationBar/bottomNavigationBar_cubit/bottom_navigation_bar_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'constant/app_routes.dart';
-import 'features/instructor_screen/instructor_cubit/instructor_cubit.dart';
 import 'helper/cache_helper.dart';
 
 void main() async {
@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => InstructorCubit(),
+      create: (context) => BottomNavigationBarCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Correcting System',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        initialRoute: AppRoutes.instructorScreen,
+        initialRoute: AppRoutes.bottomNavigationBar,
         routes: routes,
       ),
     );
