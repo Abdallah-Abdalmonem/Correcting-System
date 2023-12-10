@@ -6,7 +6,7 @@ import 'package:correcting_system/features/settings/views/seetings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../addExam/views/screens/instructor_screen.dart';
+import '../../addExam/views/screens/add_exam_screen.dart';
 
 class bottomNavigationBar extends StatelessWidget {
   const bottomNavigationBar({super.key});
@@ -21,8 +21,8 @@ class bottomNavigationBar extends StatelessWidget {
           bottomNavigationBar: BottomNavigationBar(
             items: bottomNavItems,
             currentIndex: state.tabIndex,
-            selectedItemColor: Theme.of(context).colorScheme.primary,
-            unselectedItemColor: Colors.grey,
+            selectedItemColor: const Color(0xff6200ee),
+            unselectedItemColor: const Color(0xff757575),
             onTap: (index) {
               BlocProvider.of<BottomNavigationBarCubit>(context)
                   .changeTab(tabIndex: index);
