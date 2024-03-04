@@ -6,14 +6,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../widgets/custom_question_card.dart';
 
-class AddExamScreen extends StatefulWidget {
-  const AddExamScreen({super.key});
+class AddQuestionScreen extends StatefulWidget {
+  const AddQuestionScreen({super.key});
 
   @override
-  State<AddExamScreen> createState() => _AddExamScreenState();
+  State<AddQuestionScreen> createState() => _AddQuestionScreenState();
 }
 
-class _AddExamScreenState extends State<AddExamScreen> {
+class _AddQuestionScreenState extends State<AddQuestionScreen> {
   late TextEditingController questionController;
   late TextEditingController answer1Controller;
   late TextEditingController answer2Controller;
