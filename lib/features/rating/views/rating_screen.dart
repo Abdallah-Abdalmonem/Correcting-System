@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 import '../../../constant/app_image.dart';
-import '../models/rating_model.dart';
+import '../../../models/rating_model.dart';
 
 class RatingScreen extends StatelessWidget {
   RatingScreen({super.key});

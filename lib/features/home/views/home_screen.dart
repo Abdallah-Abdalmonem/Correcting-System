@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:correcting_system/constant/app_routes.dart';
 import 'package:flutter/material.dart';
 
@@ -23,16 +22,17 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.PrimaryColor,
-              Colors.purple,
-              Colors.white,
-              // Colors.amber,
-            ],
-          ),
+          // gradient: LinearGradient(
+          //   begin: Alignment.topCenter,
+          //   end: Alignment.bottomCenter,
+          // colors: [
+          //   AppColors.PrimaryColor,
+          //   // Colors.purple,
+          //   // Colors.white,
+          //   // Colors.amber,
+          // ],
+          // ),
+          color: AppColors.PrimaryColor,
         ),
         child: SafeArea(
           child: Padding(
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                       const Spacer(),
                       InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, AppRoutes.myExamsScreen);
+                          Navigator.pushNamed(context, AppRoutes.examsScreen);
                         },
                         child: const Text(
                           'show all',
