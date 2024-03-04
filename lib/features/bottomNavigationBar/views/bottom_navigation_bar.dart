@@ -6,7 +6,7 @@ import 'package:correcting_system/features/settings/views/seetings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../doctor_funcationality/views/screens/add_exam_screen.dart';
+import '../../doctor_funcationality/views/screens/add_question_screen.dart';
 import '../../doctor_funcationality/views/screens/doctor_funcationality_screen.dart';
 
 class bottomNavigationBar extends StatelessWidget {

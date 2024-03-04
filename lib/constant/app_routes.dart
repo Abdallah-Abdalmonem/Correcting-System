@@ -1,7 +1,7 @@
 import 'package:correcting_system/features/doctor_funcationality/views/screens/doctor_funcationality_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../features/doctor_funcationality/views/screens/add_exam_screen.dart';
+import '../features/doctor_funcationality/views/screens/add_question_screen.dart';
 import '../features/bottomNavigationBar/views/bottom_navigation_bar.dart';
 import '../features/doctor_funcationality/views/screens/material_screen.dart';
 import '../features/doctor_funcationality/views/screens/question_bank.dart';
@@ -33,7 +33,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.bottomNavigationBar: (context) => const bottomNavigationBar(),
   AppRoutes.home: (context) => const HomeScreen(),
   AppRoutes.ratingScreen: (context) => RatingScreen(),
-  AppRoutes.addQuestionScreen: (context) => AddExamScreen(),
+  AppRoutes.addQuestionScreen: (context) => AddQuestionScreen(),
   AppRoutes.profile: (context) => const ProfileScreen(),
   AppRoutes.settings: (context) => const SettingsScreen(),
   AppRoutes.examsScreen: (context) => const ExamsScreen(),
