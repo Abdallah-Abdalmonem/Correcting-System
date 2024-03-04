@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         title: 'Correcting System',
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          useMaterial3: false,
         ),
         initialRoute: AppRoutes.bottomNavigationBar,
         routes: routes,
