@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomButton2 extends StatelessWidget {
-  const CustomButton2(
+class CustomButtonWithBorderRedius extends StatelessWidget {
+  const CustomButtonWithBorderRedius(
       {super.key,
       required this.title,
       required this.icon,
